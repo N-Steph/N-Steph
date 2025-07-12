@@ -1,0 +1,130 @@
+@font-face {
+    font-family: colorPrime;
+    src: url("./Courier\ Prime\ Code.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --celadon: #B2D29Fff;
+    font-family: colorPrime, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+h1 {
+    color: var(--celadon);
+    font-size: 24px;
+    font-family: colorPrime;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+}
+
+#hero {
+    background: url("./fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1%;
+}
+
+#bandeau {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#contenue {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#contenue a {
+    color: red;
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+#contenue a:hover {
+    color: white;
+    background-color: rgba(178, 32, 19, 0.8);
+    transition: ease 1s;
+}
+
+#contenue img {
+    transition: 0.5s
+}
+
+#contenue img:hover {
+    transform: rotate(180deg) scale(1.5);
+    margin: 1%;
+}
+
+#apropos {
+    display: flex;
+    margin: 20px;
+}
+
+#apropos_image {
+    flex: 1;
+}
+
+#apropos_image img{
+    flex: 1;
+    max-width: 100%;
+}
+
+#apropos_texte {
+    padding: 20px;
+    flex: 2;
+    text-align: justify;
+}
+
+#services {
+    background-color: #666;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+
+.services_item {
+    text-align: center;
+}
+
+.services_item p {
+    text-align: justify;
+    padding: 20px;
+}
+
+@media screen and (max-width: 414px) {
+    #services {
+        flex-direction: column;
+    }
+
+    #apropos {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+}
